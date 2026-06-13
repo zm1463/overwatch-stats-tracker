@@ -30,6 +30,7 @@ class MatchRequest(BaseModel):
     kills: int
     deaths: int
     assists: int
+    outcome: bool
 
 def get_db():
     db = SessionLocal()
@@ -55,7 +56,8 @@ def create_match(request_body: MatchRequest, db: Session = Depends(get_db)):
         map_name = request_body.map_name,
         kills = request_body.kills,
         deaths = request_body.deaths,
-        assists = request_body.assists
+        assists = request_body.assists,
+        victory = request_body.outcome
     )
 
     db.add(new_row)
@@ -75,6 +77,8 @@ def update_match(match_id: int, updated_data: MatchRequest, db: Session = Depend
     db_match.kills = updated_data.kills
     db_match.deaths = updated_data.deaths
     db_match.assists = updated_data.assists
+    db_match.outcome = updated_data.victory
+
 
     db.commit()
     return {"message": f"Match #{match_id} modified on hard disk!", "updated_id": db_match.id}

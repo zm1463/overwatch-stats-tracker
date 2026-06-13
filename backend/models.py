@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, Boolean
 from database import Base
 
 class MatchTable(Base):
@@ -12,3 +12,4 @@ class MatchTable(Base):
     kills = Column(Integer, default=0)
     deaths = Column(Integer, default=0)
     assists = Column(Integer, default=0)
+    victory = Column(Boolean, default=False)
