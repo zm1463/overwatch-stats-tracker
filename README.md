@@ -1,7 +1,7 @@
 # Overwatch Stats Tracker
 A full-stack web app designed to log and track some player match statistics in a video game called Overwatch
 
-## Tech Stack:
+## Tech Stack (subject to change):
 Backend - Python (FastAPI and Flask), SQLAlcehmy, SQLite
 Frontend - React, Vite
 
