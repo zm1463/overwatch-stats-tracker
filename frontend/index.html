@@ -3,40 +3,50 @@
 
 <head>
   <title> OverStat Comparer </title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-<header style="outline: 1px solid black;"> 
-  <h1> Welcome to the overwatch stat comparison site! </h1> 
-  </header>
+<header class="header"> 
+  <h1> Welcome to The Overwatch Stat Comparison Site! </h1> 
+</header>
 
-<nav style="outline: 1px solid black;"> 
-  <h2> Various links will be here </h2?>
+<nav class="nav">
+  <h2> Various links will be here </h2>
 </nav>
-
-<section>
-  <form>
-    <label for="battletag-search">Enter Overwatch Battletag:</label>
-    <input type="text" id="battletag-search" placeholder="e.g., FrostyFeet#1111">
-    <button type="submit">Compare</button>
-  </form>
-</section>
 
 <main>
 
-  <div class="player-card" id ="player-one">
-    <h2>Player 1 Placeholder Name</h2>
-    <div 
+  <div class="player-card" id="player-one">
+    
+    <form class="battletag-input-form">
+      <label for="first-battletag-search">Enter First Battletag:</label>
+      <input class="input-box" type="text" id="first-battletag-search" placeholder="e.g., FrostyFeet#1111">
+      <button class="compare-button" type="submit">Compare</button>
+    </form>
+
+    <h2 style="margin-top: 1%;">Player 1 Placeholder Name</h2>
     <ul>
       <li>A humble filler</li>
     </ul>
-
-
   </div>
 
-  <div class="player-card">
+  <div class="player-card" id ="player-two">
 
-  </div>
+    <form class="battletag-input-form">
+      <label for="second-battletag-search">Enter Second  Battletag:</label>
+      <input class="input-box" type="text" id="second-battletag-search" placeholder="e.g., FrostyFeet#2222">
+      <button class="compare-button" type="submit">Compare</button>
+    </form>
+
+    <h2 style="margin-top: 1%;">Player 2 Placeholder Name</h2>
+    <ul>
+      <li>A second humble filler</li>
+      <li> BAZINGA</li>
+    </ul>
+ </div>
+
 </main>
 
 </body>
