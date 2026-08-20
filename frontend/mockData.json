@@ -1,0 +1,84 @@
+{
+  "players": [
+    {
+      "battletag": "FrostyFeet#1111",
+      "username": "FrostyFeet",
+      "avatarUrl": "https://example.com/avatars/tracer.png",
+      "endorsementLevel": 4,
+      "roles": {
+        "tank": {
+          "rank": "Diamond 2",
+          "icon": ".assets/ranks/diamond.webp"
+        },
+        "dps": {
+          "rank": "Master 4",
+          "icon": ".assets/ranks/master.webp"
+        },
+        "support": {
+          "rank": "Platinum 1",
+          "icon": "assets/ranks/platinum.webp"
+        }
+      },
+      "stats": {
+        "gamesPlayed": 142,
+        "gamesWon": 88,
+        "winRate": "61.97%",
+        "eliminationsPer10": 22.4,
+        "deathsPer10": 6.1,
+        "damagePer10": 11250
+      },
+      "topHeroes": [
+        {
+          "name": "Tracer",
+          "timePlayedHours": 45,
+          "winRate": "65%"
+        },
+        {
+          "name": "Genji",
+          "timePlayedHours": 30,
+          "winRate": "58%"
+        }
+      ]
+    },
+    {
+      "battletag": "ExpertCobra#1911",
+      "username": "ExpertCobra",
+      "avatarUrl": "https://example.com/avatars/ana.png",
+      "endorsementLevel": 3,
+      "roles": {
+        "tank": {
+          "rank": "Gold 3",
+          "icon": ".assets/ranks/gold.webp"
+        },
+        "dps": {
+          "rank": "Platinum 5",
+          "icon": ".assets/ranks/platinum.webp"
+        },
+        "support": {
+          "rank": "Grandmaster 5",
+          "icon": ".assets/ranks/grandmaster.webp"
+        }
+      },
+      "stats": {
+        "gamesPlayed": 210,
+        "gamesWon": 120,
+        "winRate": "57.14%",
+        "eliminationsPer10": 14.2,
+        "deathsPer10": 4.8,
+        "healingPer10": 12800
+      },
+      "topHeroes": [
+        {
+          "name": "Ana",
+          "timePlayedHours": 80,
+          "winRate": "62%"
+        },
+        {
+          "name": "KIRIKO",
+          "timePlayedHours": 50,
+          "winRate": "55%"
+        }
+      ]
+    }
+  ]
+}
